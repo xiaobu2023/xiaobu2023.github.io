@@ -1,0 +1,8 @@
+{
+    "githubPullRequests.createDraft": false,
+    "githubIssues.ignoreMilestones": [],
+    "gitHistory.includeRemoteBranches": true,
+    "gitHistory.alwaysPromptRepositoryPicker": true,
+    "gitHistory.editorTitleButtonOpenRepo": true,
+    "github-enterprise.uri": ""
+}
