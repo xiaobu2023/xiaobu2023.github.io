@@ -77,7 +77,7 @@
 </style>
 </head>
 <body>
-<!-- Facebook Pixel Code -->
+<!-- Meta Pixel Code -->
 <script>
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -89,12 +89,11 @@
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '1401368710461255');
 	fbq('track', 'PageView');
-  </script>
-  <noscript>
-	<img height="1" width="1" style="display:none" 
-		 src="https://www.facebook.com/tr?id=1401368710461255&ev=PageView&noscript=1"/>
-  </noscript>
-  <!-- End Facebook Pixel Code -->
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=1401368710461255&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Meta Pixel Code -->
 <ul class="layui-nav layui-bg-blue" style="border-radius: 0px;">
 	<li class="layui-nav-item logo_css">
 		Big Gift Card Merchant In China
@@ -118,7 +117,7 @@ and i have accepted all fund exchange transaction<br/>
 Cash App/ Zelle / PayPal <br/>
 🔌Online 24 hours every day<br/>
 🔌When you have gift card ask me
-<a class="layui-btn layui-btn-lg layui-btn-fluid layui-btn-normal" href="https://wa.me/+85296086742/?text=HI">Click Whatsapp Contact Us</a>
+<a id="topBtn" class="layui-btn layui-btn-lg layui-btn-fluid layui-btn-normal" href="https://wa.me/+85296086742/?text=HI">Click Whatsapp Contact Us</a>
 		</div>
 		<div class="header-order-sn">
 			<span>-US-Steam</span>
@@ -170,13 +169,13 @@ Cash App/ Zelle / PayPal <br/>
 					<span class="icon-badge">Hot</span>
 				</div>
 				<div class="li">
-					<a id="bank_code_ccb" data-code="CCB" href="https://wa.me/+8615171517957?text=Hello">
+					<a id="bank_code_ccb2" data-code="CCB" href="https://wa.me/+8615171517957?text=Hello">
 						<span style="width:126px; height:36px;font-weight: bold; font-size: 1.2rem;">Click Whatsapp Contact Amy2</span>
 					</a>
 					<span class="icon-badge">Hot</span>
 				</div>
 				<div class="li">
-					<a id="bank_code_ccb" data-code="CCB" href="https://wa.me/+85263034903?text=hello">
+					<a id="bank_code_ccb3" data-code="CCB" href="https://wa.me/+85263034903?text=hello">
 						<span style="width:126px; height:36px;font-weight: bold; font-size: 1.2rem;">Click Whatsapp Contact Lisa</span>
 					</a>
 					<span class="icon-badge">Hot</span>
@@ -191,5 +190,19 @@ Cash App/ Zelle / PayPal <br/>
 <div style="display:none;">
 
 </div>
+<script type="text/javascript">
+	$('#bank_code_ccb').click(function() {
+    	fbq('track', 'ClickWhatsapp', {phoneNumber: "85263034903"});
+  	});
+	$('#bank_code_ccb2').click(function() {
+    	fbq('track', 'ClickWhatsapp2', {phoneNumber: "8615171517957"});
+  	});
+	  $('#bank_code_ccb3').click(function() {
+    	fbq('track', 'ClickWhatsapp3', {phoneNumber: "85263034903"});
+  	});
+	  $('#topBtn').click(function() {
+    	fbq('track', 'topBtnClickWhatsapp', {phoneNumber: "85296086742"});
+  	});
+</script>
 </body>
 </html>
